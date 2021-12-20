@@ -1,17 +1,28 @@
+import Widgets from "./Widgets";
 import "./App.css";
-import Feed from "./components/Feed";
-import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
+import Feed from "./Feed";
+import Header from "./Header";
+import Sidebar from "./Sidebar";
+import Login from "./Login";
 
 
 function App() {
+  const user = null;
+ 
   return (
     <div className="app">
-      <Header />
+       {!user ? <Login /> : (
+         <>
+           <Header />
       <div className="app_body">
         <Sidebar />
         <Feed />
+        <Widgets />
       </div>
+      </>
+    
+  )}
+    
     </div>
   );
 }
