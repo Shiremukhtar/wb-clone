@@ -8,14 +8,15 @@ import ChatIcon from '@mui/icons-material/Chat'
 import StoreFrontIcon from '@mui/icons-material/Storefront'
 import VideoLibraryIcon from '@mui/icons-material/VideoLibrary'
 import ExpandMoreOutLined from '@mui/icons-material/ExpandMoreOutlined'
-
+import { useStateValue } from "./StateProvider";
 
 const Sidebar = () => {
+  const [{ user }, dispatch] = useStateValue();
     return (
       <div className="sidebar">
         <SidebarRow
           src="https://avatars.githubusercontent.com/u/9919?s=40&v=4"
-          title="Raage Diriye"
+          title={user.displayName}
         />
         <SidebarRow
           Icon={LocalHospitalIcon}
