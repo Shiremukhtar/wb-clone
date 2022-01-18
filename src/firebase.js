@@ -4,14 +4,25 @@ import { getAuth } from 'firebase/auth'
 import { getFirestore, collection, getDocs } from "firebase/firestore";
 
 
+// const firebaseConfig = {
+//   apiKey: "AIzaSyC4AwZxySNzeX-V-cWLM5sPkWJcs_QGhxQ",
+//   authDomain: "wb-clone-b4d2a.firebaseapp.com",
+//   projectId: "wb-clone-b4d2a",
+//   storageBucket: "wb-clone-b4d2a.appspot.com",
+//   messagingSenderId: "382783260722",
+//   appId: "1:382783260722:web:e2ba5179a77827d847d42b",
+//   measurementId: "G-BZCW5063R4",
+// };
+
+
+
 const firebaseConfig = {
-  apiKey: "AIzaSyC4AwZxySNzeX-V-cWLM5sPkWJcs_QGhxQ",
-  authDomain: "wb-clone-b4d2a.firebaseapp.com",
-  projectId: "wb-clone-b4d2a",
-  storageBucket: "wb-clone-b4d2a.appspot.com",
-  messagingSenderId: "382783260722",
-  appId: "1:382783260722:web:e2ba5179a77827d847d42b",
-  measurementId: "G-BZCW5063R4",
+  apiKey: "AIzaSyDThrxCf70GGVX5mW8Eg1N_x63PeN3rLEY",
+  authDomain: "wajibuug-clone.firebaseapp.com",
+  projectId: "wajibuug-clone",
+  storageBucket: "wajibuug-clone.appspot.com",
+  messagingSenderId: "688884755262",
+  appId: "1:688884755262:web:b8447620f9fd3c9a5e5a6f",
 };
 
 
