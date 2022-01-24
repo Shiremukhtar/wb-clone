@@ -1,8 +1,7 @@
 // import firebase from "firebase";
-import { initializeApp} from 'firebase/app'
-import { getAuth } from 'firebase/auth'
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
 import { getFirestore, collection, getDocs } from "firebase/firestore";
-
 
 // const firebaseConfig = {
 //   apiKey: "AIzaSyC4AwZxySNzeX-V-cWLM5sPkWJcs_QGhxQ",
@@ -14,10 +13,10 @@ import { getFirestore, collection, getDocs } from "firebase/firestore";
 //   measurementId: "G-BZCW5063R4",
 // };
 
-
-
+console.log(process.env)
+const { REACT_APP_API_KEY  } = process.env;
 const firebaseConfig = {
-  apiKey: "AIzaSyDThrxCf70GGVX5mW8Eg1N_x63PeN3rLEY",
+  apiKey: REACT_APP_API_KEY,
   authDomain: "wajibuug-clone.firebaseapp.com",
   projectId: "wajibuug-clone",
   storageBucket: "wajibuug-clone.appspot.com",
@@ -25,12 +24,9 @@ const firebaseConfig = {
   appId: "1:688884755262:web:b8447620f9fd3c9a5e5a6f",
 };
 
-
-
 const app = initializeApp(firebaseConfig);
 const db = getFirestore();
-export const auth = getAuth(app)
-
+export const auth = getAuth(app);
 
 //  export { auth, provider };
 export default db;
