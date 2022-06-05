@@ -24,7 +24,7 @@ function Header() {
         />
         <div className="header_input">
           <SearchIcon />
-          <input type="text" placeholder="Search Wajibuug" />
+          <input type="text" placeholder="Search Facebook" />
         </div>
       </div>
       <div className="header_center">
